@@ -1,0 +1,5 @@
+mthesis_env/bin/python -m [pip install]
+
+
+mthesis_env/bin/python -m pip install pytorch lightning
+mthesis_env/bin/python downloader.py
