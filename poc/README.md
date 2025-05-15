@@ -1,0 +1,5 @@
+I am evaluating a time series model based on a validation set. which consists of the second to last week of the available data (e.g., July 18-24) and selecting the model with the lowest validation MSE loss. This introduces a risk of overfitting to the specific patterns of that week. 
+
+This can lead to a model that performs well on similar weeks (e.g., summer) but generalizes poorly to other periods (e.g., winter/spring). The dataset's limited timeframe (February 12 to July 30) exacerbates this issue by not covering a full year, potentially missing seasonal variations. 
+
+To mitigate this, I'll consider using time series cross-validation (e.g., rolling or expanding windows), multiple validation sets spanning different months or conditions, and a hold-out test set to ensure the model is evaluated across diverse temporal patterns. These strategies can improve generalizability and reduce temporal bias in model selection.
